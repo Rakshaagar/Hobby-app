@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Hobby.css">
+    <title>Hobbies App</title>
+</head>
+<body>
+
+<div id="login-container">
+    <label for="username">Username:</label>
+    <input type="text" id="username" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+    <button onclick="login()">Login</button>
+</div>
+
+<div id="app-container" style="display: none;">
+    <h2>List of Users</h2>
+    <ul id="user-list"></ul>
+
+    <div id="user-details">
+        <h2>User Details</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+        
+        <h3>Contact Numbers</h3>
+        <div id="contact-numbers">
+           
+        </div>
+
+        <button onclick="addContactNumber()">Add Contact Number</button>
+
+        <h3>Hobbies</h3>
+        <ul id="hobbies-list">
+           
+        </ul>
+
+        <button onclick="addHobby()">Add Hobby</button>
+
+        <button onclick="saveChanges()">Save Changes</button>
+    </div>
+</div>
+
+<script src="Hobby.js"></script>
+</body>
+</html>
